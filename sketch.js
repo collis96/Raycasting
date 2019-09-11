@@ -5,7 +5,9 @@ let ray;
 let light;
 
 function setup() {
-  createCanvas(400, 400);
+  var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+  var height = (window.innerHeight > 0) ? window.innerHeight : screen.height;
+  createCanvas(width, height);
   for(let i = 0; i < 5; i++){
     let x1 = random(width);
     let x2 = random(width);
